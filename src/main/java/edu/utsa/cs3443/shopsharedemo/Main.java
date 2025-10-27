@@ -1,11 +1,9 @@
 package main.java.edu.utsa.cs3443.shopsharedemo;
 
-import main.java.edu.utsa.cs3443.shopsharedemo.model.Ingredient;
+import main.java.edu.utsa.cs3443.shopsharedemo.model.ingredient.Ingredient;
 import main.java.edu.utsa.cs3443.shopsharedemo.model.recipe.Recipe;
 import main.java.edu.utsa.cs3443.shopsharedemo.model.recipe.RecipeRepository;
-import main.java.edu.utsa.cs3443.shopsharedemo.view.mainmenu.MainMenuScreen;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Main
@@ -14,7 +12,7 @@ public class Main
     {
         //JUST TESTING TO SEE IF I GOT ALL RECIPES + INGREDIENTS
         RecipeRepository recipeRepository = new RecipeRepository();
-        List<Recipe> recipeList = recipeRepository.loadRecipesFromFile("data/ingredients", "data/recipes");
+        List<Recipe> recipeList = recipeRepository.loadRecipesFromFile("data/ingredients.csv", "data/recipes");
 
         for(Recipe r : recipeList)
         {

@@ -1,6 +1,7 @@
 package main.java.edu.utsa.cs3443.shopsharedemo.model.recipe;
 
-import main.java.edu.utsa.cs3443.shopsharedemo.model.Ingredient;
+import main.java.edu.utsa.cs3443.shopsharedemo.model.UnitOfMeasure;
+import main.java.edu.utsa.cs3443.shopsharedemo.model.ingredient.Ingredient;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -95,11 +96,9 @@ public class RecipeRepository
                 String[] splitLine = line.split(",");
                 String name = splitLine[0];
                 String id = splitLine[1];
-                String weight = splitLine[2];
-                boolean isInGroceryList = Boolean.parseBoolean(splitLine[3]);
-                boolean isInPantry = Boolean.parseBoolean(splitLine[4]);
+                float amount = Float.parseFloat(splitLine[2]);
 
-                Ingredient ingredient = new Ingredient(name, id, weight, isInGroceryList, isInPantry);
+                Ingredient ingredient = new Ingredient(name, id, amount, UnitOfMeasure.UNIT);
                 ingredients.add(ingredient);
             }
 

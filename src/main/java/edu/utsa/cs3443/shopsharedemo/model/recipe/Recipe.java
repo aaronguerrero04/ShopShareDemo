@@ -1,6 +1,6 @@
 package main.java.edu.utsa.cs3443.shopsharedemo.model.recipe;
 
-import main.java.edu.utsa.cs3443.shopsharedemo.model.Ingredient;
+import main.java.edu.utsa.cs3443.shopsharedemo.model.ingredient.Ingredient;
 
 import java.util.List;
 
