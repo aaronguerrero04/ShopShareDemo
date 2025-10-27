@@ -42,12 +42,12 @@ public class Ingredient
         return name;
     }
 
-    public String getId()
+    public int getId()
     {
         return id;
     }
 
-    public float getWeight()
+    public float getServingSize()
     {
         return servingSize;
     }
