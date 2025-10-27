@@ -1,3 +1,4 @@
+//gt 10.27
 package controller;
 
 import model.GroceryList;
@@ -29,4 +30,5 @@ public class AppController { // needed a class to initialize models & views outs
         //start menu
         MainMenuScreen.displayMainMenu();
     }
+
 }
