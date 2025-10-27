@@ -6,11 +6,11 @@ import java.util.List;
 
 public class Recipe
 {
-    private List<Ingredient> ingredients;
-    private String name;
-    private String id;
+    private final List<Ingredient> ingredients;
+    private final String name;
+    private final String id;
     private boolean isSaved;
-    private boolean isCustom;
+    private final boolean isCustom;
 
     public Recipe(List<Ingredient> ingredients, String name, String id, boolean isSaved, boolean isCustom)
     {
@@ -44,5 +44,9 @@ public class Recipe
     public boolean isCustom()
     {
         return isCustom;
+    }
+
+    public void setIsSaved(boolean isSaved){
+        this.isSaved = isSaved;
     }
 }
