@@ -1,3 +1,5 @@
+//gt 10.27
+
 package controller;
 
 import model.GroceryList;
@@ -6,7 +8,7 @@ import model.Pantry;
 
 import java.util.List;
 
-public class IngredientController {
+public class IngredientController { // handles ingredient operations between pantry and the grocery list
     private Pantry pantry;
     private GroceryList groceryList;
 
@@ -35,4 +37,5 @@ public class IngredientController {
     public List<Ingredient> getGroceryListIngredients() { // self-explanatory
         return groceryList.getIngredients();
     }
+
 }
