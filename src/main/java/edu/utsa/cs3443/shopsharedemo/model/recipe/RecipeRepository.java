@@ -79,11 +79,11 @@ public class RecipeRepository
 
                 if(line.startsWith("INGREDIENT:"))
                 {
-                    String ingredientID = splitLine[1];
+                    int ingredientID = Integer.parseInt(splitLine[1]);
 
                     for(Ingredient ingredient : ingredients)
                     {
-                        if(ingredient.getId().equals(ingredientID))
+                        if(ingredient.getId() == ingredientID)
                         {
                             recipeIngredients.add(ingredient);
                             break;
@@ -120,7 +120,21 @@ public class RecipeRepository
             {
                 try {
                     String[] splitLine = line.split(",");
-                    Ingredient ingredient = getIngredient(splitLine);
+                    int id = Integer.parseInt(splitLine[0]);
+                    String name = splitLine[1];
+                    float servingSize = Float.parseFloat(splitLine[2]);
+                    Category category = parseCategory(splitLine[3]);
+                    int calories = Integer.parseInt(splitLine[4]);
+                    float protein = Float.parseFloat(splitLine[5]);
+                    float carbohydrates = Float.parseFloat(splitLine[6]);
+                    float fats = Float.parseFloat(splitLine[7]);
+                    float fiber = Float.parseFloat(splitLine[8]);
+                    float suger = Float.parseFloat(splitLine[9]);
+                    float sodium = Float.parseFloat(splitLine[10]);
+                    float cholestoral = Float.parseFloat(splitLine[11]);
+                    MealType mealType = parseMealType(splitLine[12]);
+
+                    Ingredient ingredient = new Ingredient(name, id, servingSize, UnitOfMeasure.UNIT, category, calories, protein, carbohydrates, fiber, fats, suger, sodium, cholestoral, mealType);
                     ingredients.add(ingredient);
                 } catch (NumberFormatException e) {
                     continue;
@@ -135,24 +149,5 @@ public class RecipeRepository
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-    }
-
-    private static Ingredient getIngredient(String[] splitLine) {
-        int id = Integer.parseInt(splitLine[0]);
-        String name = splitLine[1];
-        float servingSize = Float.parseFloat(splitLine[2]);
-        Category category = parseCategory(splitLine[3]);
-        int calories = Integer.parseInt(splitLine[4]);
-        float protein = Float.parseFloat(splitLine[5]);
-        float carbohydrates = Float.parseFloat(splitLine[6]);
-        float fats = Float.parseFloat(splitLine[7]);
-        float fiber = Float.parseFloat(splitLine[8]);
-        float suger = Float.parseFloat(splitLine[9]);
-        float sodium = Float.parseFloat(splitLine[10]);
-        float cholestoral = Float.parseFloat(splitLine[11]);
-        MealType mealType = parseMealType(splitLine[12]);
-
-        Ingredient ingredient = new Ingredient(name, id, servingSize, UnitOfMeasure.UNIT, category, calories, protein, carbohydrates, fiber, fats, suger, sodium, cholestoral, mealType);
-        return ingredient;
     }
 }
