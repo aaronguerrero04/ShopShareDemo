@@ -1,7 +1,9 @@
 package main.java.edu.utsa.cs3443.shopsharedemo.model.recipe;
 
 import main.java.edu.utsa.cs3443.shopsharedemo.model.UnitOfMeasure;
+import main.java.edu.utsa.cs3443.shopsharedemo.model.ingredient.Category;
 import main.java.edu.utsa.cs3443.shopsharedemo.model.ingredient.Ingredient;
+import main.java.edu.utsa.cs3443.shopsharedemo.model.ingredient.MealType;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -13,6 +15,29 @@ import java.util.List;
 public class RecipeRepository
 {
     private List<Ingredient> ingredients;
+
+    public static Category parseCategory(String category){
+        return switch (category) {
+            case "MEAT" -> Category.MEAT;
+            case "GRAINS" -> Category.GRAINS;
+            case "FRUIT" -> Category.FRUIT;
+            case "VEGETABLE" -> Category.VEGETABLE;
+            case "BEVERAGES" -> Category.BEVERAGES;
+            case "SNACKS" -> Category.SNACKS;
+            case "DAIRY" -> Category.DAIRY;
+            default -> null;
+        };
+    }
+
+    public static MealType parseMealType(String mealType){
+        return switch (mealType) {
+            case "LUNCH" -> MealType.LUNCH;
+            case "BREAKFAST" -> MealType.BREAKFAST;
+            case "SNACK" -> MealType.SNACK;
+            case "DINNER" -> MealType.DINNER;
+            default -> null;
+        };
+    }
 
     public List<Recipe> loadRecipesFromFile(String ingredientsFile, String recipesFile)
     {
@@ -93,13 +118,13 @@ public class RecipeRepository
 
             while((line = reader.readLine()) != null)
             {
-                String[] splitLine = line.split(",");
-                String name = splitLine[0];
-                String id = splitLine[1];
-                float amount = Float.parseFloat(splitLine[2]);
-
-                Ingredient ingredient = new Ingredient(name, id, amount, UnitOfMeasure.UNIT);
-                ingredients.add(ingredient);
+                try {
+                    String[] splitLine = line.split(",");
+                    Ingredient ingredient = getIngredient(splitLine);
+                    ingredients.add(ingredient);
+                } catch (NumberFormatException e) {
+                    continue;
+                }
             }
 
             reader.close();
@@ -110,5 +135,24 @@ public class RecipeRepository
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    private static Ingredient getIngredient(String[] splitLine) {
+        int id = Integer.parseInt(splitLine[0]);
+        String name = splitLine[1];
+        float servingSize = Float.parseFloat(splitLine[2]);
+        Category category = parseCategory(splitLine[3]);
+        int calories = Integer.parseInt(splitLine[4]);
+        float protein = Float.parseFloat(splitLine[5]);
+        float carbohydrates = Float.parseFloat(splitLine[6]);
+        float fats = Float.parseFloat(splitLine[7]);
+        float fiber = Float.parseFloat(splitLine[8]);
+        float suger = Float.parseFloat(splitLine[9]);
+        float sodium = Float.parseFloat(splitLine[10]);
+        float cholestoral = Float.parseFloat(splitLine[11]);
+        MealType mealType = parseMealType(splitLine[12]);
+
+        Ingredient ingredient = new Ingredient(name, id, servingSize, UnitOfMeasure.UNIT, category, calories, protein, carbohydrates, fiber, fats, suger, sodium, cholestoral, mealType);
+        return ingredient;
     }
 }
