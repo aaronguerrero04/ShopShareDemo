@@ -18,3 +18,10 @@ public class Main
         MainMenuScreen.displayMainMenu();
     }
 }
+
+/* public static void main(String[] args) {
+        // create and start application through the AppController
+        AppController appController = new AppController();
+        appController.startApplication();
+    }
+*/
