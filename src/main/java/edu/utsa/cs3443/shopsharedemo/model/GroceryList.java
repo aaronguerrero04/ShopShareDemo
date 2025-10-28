@@ -1,3 +1,4 @@
+//gt 10.27
 package model;
 
 import main.java.edu.utsa.cs3443.model.ingredient.Ingredient;
@@ -32,4 +33,5 @@ public class GroceryList {
     }
 
 }
+
 
