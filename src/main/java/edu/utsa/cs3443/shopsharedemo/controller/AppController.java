@@ -1,11 +1,11 @@
 //gt 10.27
-package controller;
+package main.java.edu.utsa.cs3443.shopsharedemo.controller;
 
-import main.java.edu.utsa.cs3443.model.GroceryList;
-import main.java.edu.utsa.cs3443.model.Pantry;
-import main.java.edu.utsa.cs3443.view.GroceryListScreen;
-import main.java.edu.utsa.cs3443.view.PantryScreen;
-import main.java.edu.utsa.cs3443.view.mainmenu.MainMenuScreen;
+import main.java.edu.utsa.cs3443.shopsharedemo.model.GroceryList;
+import main.java.edu.utsa.cs3443.shopsharedemo.model.Pantry;
+import main.java.edu.utsa.cs3443.shopsharedemo.view.GroceryListScreen;
+import main.java.edu.utsa.cs3443.shopsharedemo.view.PantryScreen;
+import main.java.edu.utsa.cs3443.shopsharedemo.view.mainmenu.MainMenuScreen;
 
 public class AppController { // needed a class to initialize models & views outside of main/view classes.
     private Pantry pantry; // pantry model

@@ -1,10 +1,10 @@
 //gt 10.27
 
-package controller;
+package main.java.edu.utsa.cs3443.shopsharedemo.controller;
 
-import main.java.edu.utsa.cs3443.model.GroceryList;
-import main.java.edu.utsa.cs3443.model.ingredient.Ingredient;
-import main.java.edu.utsa.cs3443.model.Pantry;
+import main.java.edu.utsa.cs3443.shopsharedemo.model.GroceryList;
+import main.java.edu.utsa.cs3443.shopsharedemo.model.ingredient.Ingredient;
+import main.java.edu.utsa.cs3443.shopsharedemo.model.Pantry;
 
 import java.util.List;
 

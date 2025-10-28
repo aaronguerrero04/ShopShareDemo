@@ -1,11 +1,11 @@
 //gt 10.27
 
-package model;
+package main.java.edu.utsa.cs3443.shopsharedemo.model;
 
-import main.java.edu.utsa.cs3443.model.ingredient.Ingredient;
-import main.java.edu.utsa.cs3443.model.ingredient.Category;
-import main.java.edu.utsa.cs3443.model.UnitOfMeasure;
-import main.java.edu.utsa.cs3443.model.recipe.RecipeRepository;
+import main.java.edu.utsa.cs3443.shopsharedemo.model.ingredient.Ingredient;
+import main.java.edu.utsa.cs3443.shopsharedemo.model.ingredient.Category;
+import main.java.edu.utsa.cs3443.shopsharedemo.model.UnitOfMeasure;
+import main.java.edu.utsa.cs3443.shopsharedemo.model.recipe.RecipeRepository;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -65,8 +65,7 @@ public class Pantry {
                             0.0f,                // float fat (default value)
                             0.0f,                // float sugar (default value)
                             0.0f,                // float sodium (default value)
-                            0.0f,                // float cholesterol (default value)
-                            null                 // MealType mealType (default value)
+                            0.0f                // float cholesterol (default value)
                     );
                     ingredients.add(ingredient);
                     ingredients.add(ingredient);

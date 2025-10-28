@@ -28,16 +28,6 @@ public class RecipeRepository
         };
     }
 
-    public static MealType parseMealType(String mealType){
-        return switch (mealType) {
-            case "LUNCH" -> MealType.LUNCH;
-            case "BREAKFAST" -> MealType.BREAKFAST;
-            case "SNACK" -> MealType.SNACK;
-            case "DINNER" -> MealType.DINNER;
-            default -> null;
-        };
-    }
-
     public List<Recipe> loadRecipesFromFile(String ingredientsFile, String recipesFile)
     {
         try {
@@ -131,9 +121,8 @@ public class RecipeRepository
                     float suger = Float.parseFloat(splitLine[9]);
                     float sodium = Float.parseFloat(splitLine[10]);
                     float cholestoral = Float.parseFloat(splitLine[11]);
-                    MealType mealType = parseMealType(splitLine[12]);
 
-                    Ingredient ingredient = new Ingredient(name, id, servingSize, UnitOfMeasure.UNIT, category, calories, protein, carbohydrates, fiber, fats, suger, sodium, cholestoral, mealType);
+                    Ingredient ingredient = new Ingredient(name, id, servingSize, UnitOfMeasure.UNIT, category, calories, protein, carbohydrates, fiber, fats, suger, sodium, cholestoral);
                     ingredients.add(ingredient);
                 } catch (NumberFormatException e) {
                     continue;

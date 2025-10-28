@@ -1,9 +1,9 @@
 //gt 10.27
-package view;
+package main.java.edu.utsa.cs3443.shopsharedemo.view;
 
-import main.java.edu.utsa.cs3443.model.Pantry;
-import main.java.edu.utsa.cs3443.model.ingredient.Ingredient;
-import main.java.edu.utsa.cs3443.view.mainmenu.MainMenuScreen;
+import main.java.edu.utsa.cs3443.shopsharedemo.model.Pantry;
+import main.java.edu.utsa.cs3443.shopsharedemo.model.ingredient.Ingredient;
+import main.java.edu.utsa.cs3443.shopsharedemo.view.mainmenu.MainMenuScreen;
 
 import java.util.Scanner;
 

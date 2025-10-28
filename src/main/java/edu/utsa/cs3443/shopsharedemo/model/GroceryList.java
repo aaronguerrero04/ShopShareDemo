@@ -1,7 +1,7 @@
 //gt 10.27
-package model;
+package main.java.edu.utsa.cs3443.shopsharedemo.model;
 
-import main.java.edu.utsa.cs3443.model.ingredient.Ingredient;
+import main.java.edu.utsa.cs3443.shopsharedemo.model.ingredient.Ingredient;
 
 import java.util.ArrayList;
 import java.util.List;
