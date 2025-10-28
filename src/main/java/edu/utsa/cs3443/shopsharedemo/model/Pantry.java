@@ -53,19 +53,19 @@ public class Pantry {
                     UnitOfMeasure unit = UnitOfMeasure.UNIT;
 
                     Ingredient ingredient = new Ingredient(
-                            name,                // String name
-                            0,                   // int id (default value)
-                            1.0f,                // float servingSize (default value)
-                            unit,                // UnitOfMeasure unitOfMeasure
-                            category,            // Category category
-                            0,                   // int calories (default value)
-                            0.0f,                // float protein (default value)
-                            0.0f,                // float carbohydrates (default value)
-                            0.0f,                // float fiber (default value)
-                            0.0f,                // float fat (default value)
-                            0.0f,                // float sugar (default value)
-                            0.0f,                // float sodium (default value)
-                            0.0f                // float cholesterol (default value)
+                            name,                
+                            0,                   
+                            1.0f,                
+                            unit,                
+                            category,            
+                            0,                   
+                            0.0f,                
+                            0.0f,                
+                            0.0f,                
+                            0.0f,                
+                            0.0f,                
+                            0.0f,                
+                            0.0f                )
                     );
                     ingredients.add(ingredient);
                     ingredients.add(ingredient);
