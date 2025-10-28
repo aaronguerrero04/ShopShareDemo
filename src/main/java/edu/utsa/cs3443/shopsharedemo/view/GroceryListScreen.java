@@ -1,9 +1,9 @@
 package view;
 
-import model.GroceryList;
-import model.ingredient.Ingredient;
-import model.Pantry;
-import view.mainmenu.MainMenuScreen;
+import main.java.edu.utsa.cs3443.model.GroceryList;
+import main.java.edu.utsa.cs3443.model.ingredient.Ingredient;
+import main.java.edu.utsa.cs3443.model.Pantry;
+import main.java.edu.utsa.cs3443.view.mainmenu.MainMenuScreen;
 
 import java.util.Scanner;
 
