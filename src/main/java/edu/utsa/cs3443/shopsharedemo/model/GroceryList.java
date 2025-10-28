@@ -1,6 +1,6 @@
 package model;
 
-import model.ingredient.Ingredient;
+import main.java.edu.utsa.cs3443model.ingredient.Ingredient;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,4 +30,5 @@ public class GroceryList {
             pantry.addIngredient(ingredient);
         }
     }
+
 }
