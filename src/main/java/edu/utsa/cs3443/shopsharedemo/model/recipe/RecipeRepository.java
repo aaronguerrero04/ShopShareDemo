@@ -3,7 +3,6 @@ package main.java.edu.utsa.cs3443.shopsharedemo.model.recipe;
 import main.java.edu.utsa.cs3443.shopsharedemo.model.UnitOfMeasure;
 import main.java.edu.utsa.cs3443.shopsharedemo.model.ingredient.Category;
 import main.java.edu.utsa.cs3443.shopsharedemo.model.ingredient.Ingredient;
-import main.java.edu.utsa.cs3443.shopsharedemo.model.ingredient.MealType;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
