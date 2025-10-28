@@ -34,16 +34,16 @@ public class MainMenuScreen
         switch (mainMenuOption)
         {
             case groceryList:
-                displayGroceryListScreen();
+                GroceryListScreen.displayGroceryList();
                 break;
             case planner:
-                displayPlannerScreen();
+                PlannerScreen.displayPlanner();
                 break;
             case recipes:
-                displayRecipesScreen();
+                RecipesScreen.displayRecipes();
                 break;
             case pantry:
-                displayPantryScreen();
+                PantryScreen.displayPantry();
                 break;
             case exit:
                 System.out.println("Exit");
@@ -67,25 +67,5 @@ public class MainMenuScreen
         }
 
         return MainMenuOption.exit;
-    }
-
-    public static void displayGroceryListScreen()
-    {
-        GroceryListScreen.displayGroceryList();
-    }
-
-    public static void displayPlannerScreen()
-    {
-        PlannerScreen.displayPlanner();
-    }
-
-    public static void displayRecipesScreen()
-    {
-        RecipesScreen.displayRecipes();
-    }
-
-    public static void displayPantryScreen()
-    {
-        PantryScreen.displayPantry();
     }
 }
