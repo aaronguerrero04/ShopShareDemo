@@ -49,4 +49,8 @@ public class Recipe
     public void setIsSaved(boolean isSaved){
         this.isSaved = isSaved;
     }
+
+    public String toString() {
+        return name;
+    }
 }
