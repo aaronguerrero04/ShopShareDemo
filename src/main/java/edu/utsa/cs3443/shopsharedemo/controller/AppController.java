@@ -1,11 +1,11 @@
 //gt 10.27
 package controller;
 
-import model.GroceryList;
-import model.Pantry;
-import view.GroceryListScreen;
-import view.PantryScreen;
-import view.mainmenu.MainMenuScreen;
+import main.java.edu.utsa.cs3443.model.GroceryList;
+import main.java.edu.utsa.cs3443.model.Pantry;
+import main.java.edu.utsa.cs3443.view.GroceryListScreen;
+import main.java.edu.utsa.cs3443.view.PantryScreen;
+import main.java.edu.utsa.cs3443.view.mainmenu.MainMenuScreen;
 
 public class AppController { // needed a class to initialize models & views outside of main/view classes.
     private Pantry pantry; // pantry model
@@ -32,3 +32,4 @@ public class AppController { // needed a class to initialize models & views outs
     }
 
 }
+
