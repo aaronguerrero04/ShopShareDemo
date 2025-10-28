@@ -1,9 +1,9 @@
 package model;
 
-import model.ingredient.Ingredient;
-import model.ingredient.Category;
-import model.UnitOfMeasure;
-import model.recipe.RecipeRepository;
+import main.java.edu.utsa.cs3443.model.ingredient.Ingredient;
+import main.java.edu.utsa.cs3443.model.ingredient.Category;
+import main.java.edu.utsa.cs3443.model.UnitOfMeasure;
+import main.java.edu.utsa.cs3443.model.recipe.RecipeRepository;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -76,4 +76,5 @@ public class Pantry {
             throw new RuntimeException("Error reading dataset file: " + filePath, e);
         }
     }
+
 }
