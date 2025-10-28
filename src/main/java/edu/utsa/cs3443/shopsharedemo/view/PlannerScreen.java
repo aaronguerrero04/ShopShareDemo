@@ -10,7 +10,5 @@ public class PlannerScreen
         System.out.println("\t[1] View Planner");
         System.out.println("\t[2] Add Meal");
         System.out.println("\t[3] Remove Meal");
-        System.out.println("\t[4] ");
-
     }
 }

@@ -1,5 +1,6 @@
 package main.java.edu.utsa.cs3443.shopsharedemo.view.mainmenu;
 
+import main.java.edu.utsa.cs3443.shopsharedemo.model.GroceryList;
 import main.java.edu.utsa.cs3443.shopsharedemo.view.GroceryListScreen;
 import main.java.edu.utsa.cs3443.shopsharedemo.view.PantryScreen;
 import main.java.edu.utsa.cs3443.shopsharedemo.view.PlannerScreen;
