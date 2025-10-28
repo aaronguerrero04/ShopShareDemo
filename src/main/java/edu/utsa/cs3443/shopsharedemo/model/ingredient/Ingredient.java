@@ -17,9 +17,8 @@ public class Ingredient
     private final float sugar;
     private final float sodium;
     private final float cholesterol;
-    private final MealType mealType;
 
-    public Ingredient(String name, int id, float amount, UnitOfMeasure unitOfMeasure, Category category, int calories, float protien, float carbohydrates, float fiber, float fat, float sugar, float sodium, float cholesterol, MealType mealType)
+    public Ingredient(String name, int id, float amount, UnitOfMeasure unitOfMeasure, Category category, int calories, float protien, float carbohydrates, float fiber, float fat, float sugar, float sodium, float cholesterol)
     {
         this.name = name;
         this.id = id;
@@ -34,7 +33,6 @@ public class Ingredient
         this.sugar = sugar;
         this.sodium = sodium;
         this.cholesterol = cholesterol;
-        this.mealType = mealType;
     }
 
     public String getName()
@@ -94,10 +92,6 @@ public class Ingredient
 
     public float getSodium() {
         return sodium;
-    }
-
-    public MealType getMealType() {
-        return mealType;
     }
 
     public Category getCategory() {

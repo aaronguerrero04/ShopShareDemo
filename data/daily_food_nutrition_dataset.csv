@@ -1,36 +1,36 @@
-User_ID,Food_Item,Category,Calories (kcal),Protein (g),Carbohydrates (g),Fat (g),Fiber (g),Sugars (g),Sodium (mg),Cholesterol (mg),Meal_Type
-496,Eggs,Meat,173,42.4,83.7,1.5,1.5,12.7,752,125,Lunch
-201,Apple,Fruits,66,39.2,13.8,3.2,2.6,12.2,680,97,Lunch
-776,Chicken Breast,Meat,226,27.1,79.1,25.8,3.2,44.7,295,157,Breakfast
-112,Banana,Fruits,116,43.4,47.1,16.1,6.5,44.1,307,13,Snack
-620,Oats,Grains,387,31.2,6.8,39.5,5.1,0.7,300,244,Dinner
-714,Carrot,Vegetables,138,28.2,12.4,20.2,2.8,37.8,933,15,Dinner
-992,Cookies,Snacks,69,36.8,17.8,15.0,9.6,36.4,185,228,Snack
-594,Quinoa,Grains,204,19.3,62.7,31.8,6.8,40.3,887,135,Snack
-621,Tomato,Vegetables,117,34.4,21.0,10.1,9.1,18.5,66,180,Dinner
-74,Orange Juice,Beverages,147,20.1,32.7,8.9,7.0,42.4,500,250,Snack
-151,Beef Steak,Meat,157,27.5,32.4,9.4,0.5,24.6,180,68,Lunch
-863,Pork Chop,Meat,385,15.8,36.5,33.1,2.1,27.6,134,88,Lunch
-770,Grapes,Fruits,274,42.4,54.5,45.2,8.2,20.3,507,76,Breakfast
-986,Milkshake,Beverages,353,24.0,96.2,6.8,0.9,17.5,305,17,Lunch
-54,Pasta,Grains,217,28.1,8.3,38.9,3.7,43.2,653,176,Dinner
-66,Orange,Fruits,222,21.1,85.0,45.1,1.7,46.8,422,260,Snack
-581,Nuts,Snacks,552,25.9,27.4,39.2,1.5,47.3,338,292,Breakfast
-759,Cheese,Dairy,252,18.0,24.9,31.0,8.2,43.6,744,110,Breakfast
-6,Strawberry,Fruits,141,19.0,93.3,11.8,5.7,20.0,970,263,Lunch
-351,Butter,Dairy,315,37.8,25.5,15.6,1.2,1.0,555,119,Breakfast
-547,Rice,Grains,142,14.6,21.9,41.4,2.7,46.5,947,48,Lunch
-421,Yogurt,Dairy,568,27.5,63.4,25.4,1.6,9.5,360,20,Snack
-324,Broccoli,Vegetables,219,32.6,49.5,30.3,9.4,23.5,771,138,Dinner
-369,Water,Beverages,171,47.4,80.3,10.1,9.0,44.3,525,264,Breakfast
-395,Paneer,Dairy,173,22.1,59.4,30.1,5.2,12.4,424,10,Snack
-882,Salmon,Meat,508,5.3,70.4,40.3,6.1,47.2,423,230,Snack
-502,Milk,Dairy,282,30.3,69.7,21.5,5.4,39.9,731,263,Dinner
-164,Coffee,Beverages,484,29.7,70.2,37.9,8.6,32.7,569,176,Lunch
-964,Spinach,Vegetables,282,12.0,54.0,6.6,2.2,29.4,198,81,Lunch
-696,Potato,Vegetables,161,30.4,72.8,31.4,7.3,38.4,934,62,Snack
-462,Green Tea,Beverages,425,23.1,30.9,9.2,8.2,36.4,201,145,Lunch
-237,Bread,Grains,467,4.5,95.5,49.5,8.9,28.9,577,273,Dinner
-589,Chocolate,Snacks,153,46.7,91.0,45.0,7.0,49.7,494,38,Lunch
-120,Chips,Snacks,365,29.1,67.1,28.2,4.8,41.3,810,4,Dinner
-365,Popcorn,Snacks,481,38.6,36.8,12.2,8.1,22.2,263,125,Lunch
+User_ID,Food_Item,Category,Calories (kcal),Protein (g),Carbohydrates (g),Fat (g),Fiber (g),Sugars (g),Sodium (mg),Cholesterol (mg)
+496,Eggs,Meat,173,42.4,83.7,1.5,1.5,12.7,752,125
+201,Apple,Fruits,66,39.2,13.8,3.2,2.6,12.2,680,97
+776,Chicken Breast,Meat,226,27.1,79.1,25.8,3.2,44.7,295,157
+112,Banana,Fruits,116,43.4,47.1,16.1,6.5,44.1,307,13
+620,Oats,Grains,387,31.2,6.8,39.5,5.1,0.7,300,244
+714,Carrot,Vegetables,138,28.2,12.4,20.2,2.8,37.8,933,15
+992,Cookies,Snacks,69,36.8,17.8,15.0,9.6,36.4,185,228
+594,Quinoa,Grains,204,19.3,62.7,31.8,6.8,40.3,887,135
+621,Tomato,Vegetables,117,34.4,21.0,10.1,9.1,18.5,66,180
+74,Orange Juice,Beverages,147,20.1,32.7,8.9,7.0,42.4,500,250
+151,Beef Steak,Meat,157,27.5,32.4,9.4,0.5,24.6,180,68
+863,Pork Chop,Meat,385,15.8,36.5,33.1,2.1,27.6,134,88
+770,Grapes,Fruits,274,42.4,54.5,45.2,8.2,20.3,507,76
+986,Milkshake,Beverages,353,24.0,96.2,6.8,0.9,17.5,305,17
+54,Pasta,Grains,217,28.1,8.3,38.9,3.7,43.2,653,176
+66,Orange,Fruits,222,21.1,85.0,45.1,1.7,46.8,422,260
+581,Nuts,Snacks,552,25.9,27.4,39.2,1.5,47.3,338,292
+759,Cheese,Dairy,252,18.0,24.9,31.0,8.2,43.6,744,110
+6,Strawberry,Fruits,141,19.0,93.3,11.8,5.7,20.0,970,263
+351,Butter,Dairy,315,37.8,25.5,15.6,1.2,1.0,555,119
+547,Rice,Grains,142,14.6,21.9,41.4,2.7,46.5,947,48
+421,Yogurt,Dairy,568,27.5,63.4,25.4,1.6,9.5,360,20
+324,Broccoli,Vegetables,219,32.6,49.5,30.3,9.4,23.5,771,138
+369,Water,Beverages,171,47.4,80.3,10.1,9.0,44.3,525,264
+395,Paneer,Dairy,173,22.1,59.4,30.1,5.2,12.4,424,10
+882,Salmon,Meat,508,5.3,70.4,40.3,6.1,47.2,423,230
+502,Milk,Dairy,282,30.3,69.7,21.5,5.4,39.9,731,263
+164,Coffee,Beverages,484,29.7,70.2,37.9,8.6,32.7,569,176
+964,Spinach,Vegetables,282,12.0,54.0,6.6,2.2,29.4,198,81
+696,Potato,Vegetables,161,30.4,72.8,31.4,7.3,38.4,934,62
+462,Green Tea,Beverages,425,23.1,30.9,9.2,8.2,36.4,201,145
+237,Bread,Grains,467,4.5,95.5,49.5,8.9,28.9,577,273
+589,Chocolate,Snacks,153,46.7,91.0,45.0,7.0,49.7,494,38
+120,Chips,Snacks,365,29.1,67.1,28.2,4.8,41.3,810,4
+365,Popcorn,Snacks,481,38.6,36.8,12.2,8.1,22.2,263,125
